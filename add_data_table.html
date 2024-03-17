@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="POST" name="sample">
+      <br />
+      <label for="roll-number">Roll Number</label><br />
+      <input type="number" id="roll-number" />
+      <br /><br />
+      <label for="name">Name</label><br />
+      <input type="text" name="" id="name" />
+      <br /><br />
+      <input type="button" name="add" value="Add Data" onclick="addStudent()" />
+      <br />
+      <br />
+      <input
+        type="button"
+        name="delete"
+        value="Delete Data"
+        onclick="deleteStudent(document.getElementById('tbl').rows[1
+        ])"
+      />
+      <hr />
+      <br /><br />
+      <table
+        id="tbl"
+        class="table"
+        border="1"
+        style="border-collapse: collapse"
+      >
+        <thead>
+          <th>roll no</th>
+          <th>Name</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </form>
+    <script type="text/javascript">
+      
+      function addStudent() {
+        let rollno = document.getElementById("roll-number").value;
+        let name = document.getElementById("name").value;
+
+        let tr = document.createElement("tr");
+
+        let td1 = tr.appendChild(document.createElement("td"));
+        let td2 = tr.appendChild(document.createElement("td"));
+
+        td1.innerHTML = rollno;
+        td2.innerHTML = name;
+
+        document.getElementById("tbl").appendChild(tr);
+      }
+      function deleteStudent(row) {
+        row.parentNode.removeChild(row);
+      }
+    </script>
+  </body>
+
+
+</html>

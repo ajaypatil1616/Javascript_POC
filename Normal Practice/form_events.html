@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onselect Event Example</title>
+  </head>
+  <body>
+    <label for="inputText">Select text in the input:</label>
+    <input type="text" id="inputText" onselect="handleSelect()" /><br /><br />
+
+    <p id="selectedText">Selected text will be displayed here.</p>
+
+    <script>
+      function handleSelect() {
+        // Get the selected text within the input field
+        var selectedText = window.getSelection().toString();
+
+        // Update the paragraph element to display the selected text
+        document.getElementById("selectedText").textContent =
+          "Selected text: " + selectedText;
+      }
+    </script>
+  </body>
+</html>

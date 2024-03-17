@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storage and Eval</title>
+  </head>
+  <body>
+    <p>eval: evalutes all the code inside the double qoutes as a JS CODE</p>
+
+    <script>
+      eval('alert("This alert poped up using eval")');
+      let result = 0;
+      function sum(a, b) {
+        return a + b;
+      }
+      eval("result = sum(16,16)");
+      eval("alert(`result:${result  }`)");
+
+      localStorage.setItem("name", "ajay");
+      localStorage.setItem("surName", "patil");
+      localStorage.setItem("lName", "patil");
+
+      localStorage.getItem("age");
+      localStorage.getItem("name");
+
+      localStorage.removeItem("age");
+
+      localStorage.clear();
+
+      let person = {
+        name: "ajay",
+        lname: "patil",
+        age: 25,
+        city: "KOP",
+      };
+      localStorage.setItem("person-copy", JSON.stringify(person));
+      let data = localStorage.getItem("person-copy");
+      JSON.parse(data);
+      
+    </script>
+  </body>
+</html>

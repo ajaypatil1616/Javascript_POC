@@ -1,0 +1,108 @@
+/*The if-else statement estimates integers, characters, pointers, floating points, and boolean types.*/
+
+//if statement
+
+/*
+var  a = 100 
+if (a > 30){
+    document.write(a);
+}
+
+//if else if else statement
+if (a > 100){
+    document.write("a is greater than 100")
+    
+}
+else if (a == 100){
+    document.write(" a is equal to 100")
+}
+else {
+    document.write("a is less then 100")
+}
+
+// switch statment 
+// it can be used with numbers as well as characters
+//The switch statement estimates integers and character expressions.
+var ajay = 'B'
+var result 
+switch(ajay){
+    case 'A':
+    result = "A  is here "
+    break;
+    
+    case 'B':
+        result = "B b ishere"
+        break;
+    case 'C':
+        result = "C is here "
+        break;
+    default :
+    result = " No result "
+}
+document.write(result)
+*/
+/*
+// For loop in js
+for (i=5; i<=50;i += 5){
+    document.write(i)
+}
+
+*/
+// while loop
+/*
+var v = 10
+while(v <=12){
+    console.log(v)
+    v ++
+}
+*/
+/*
+
+// do while statement
+var vara = 1000
+do {
+    document.write(vara)
+}
+while(vara <= 90){
+    document.write(vara)
+    vara++;
+}
+*/
+
+function msg(number){
+    document.write(number);
+}
+
+msg("This is function with arugment")
+
+
+function returnFun(){
+    return "Hey there I am function with return keyword";
+}
+document.write(returnFun())
+
+/*
+Use var if you want function-scoped variables that can be hoisted.
+Use let if you want block-scoped variables that can be reassigned.
+Use const if you want block-scoped variables that are constant and cannot be reassigned.
+*/
+//creating object
+var obj = new Function("a","b", "return a+b ")
+document.write(obj(2,7))
+console.log(typeof(obj))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

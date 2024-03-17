@@ -1,0 +1,16 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.carousel img {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel img:first-child {
+  display: block; /* Display the first image initially */
+}

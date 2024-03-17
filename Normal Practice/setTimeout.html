@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Time Out</title>
+  </head>
+  <body>
+    <script>
+      let a = setTimeout(() => {
+        alert("Hey there");
+      }, 2000);
+
+      clearTimeout(a);
+      let myFunction = (a, b) => {
+        alert(`Hey there ,${a + b}`);
+        console.log(a + b);
+      };
+      let b = setInterval(myFunction, 2000, 10, 12);
+      clearInterval(b);
+    </script>
+  </body>
+</html>

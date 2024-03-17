@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mouse Events</title>
+    <script src="try_catch.js"></script>
+  </head>
+  <body>
+    <!-- <input id="demo" type="text" />
+    <button type="button" onclick="promtFunction()">Test Input</button>
+    <p id="p" style="background-color: magenta"></p> -->
+
+    <button type="button" onclick="onclickFunction()">onclick</button>
+    <p id="onclick-id"></p>
+    <hr />
+
+    <p id="oncontextmenu-id">The context menu has been disabled here</p>
+    <p>But it has not been disabled here</p>
+    <hr />
+    <button type="button" ondblclick="dbclickFunction()">dbclick</button>
+
+    <p id="dbclick-id">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque,
+      voluptate.
+    </p>
+
+    <hr />
+    <p id="onmouseover-id" onmouseover="onmouseoverFunction1()">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, dolore!
+    </p>
+
+    <hr />
+
+    <p
+      id="onmousedown-id"
+      onmousedown="onmousedownFunction()"
+      onmouseup="onmouseupFunction()"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quo.
+    </p>
+
+    <hr />
+    <p
+      id="onmouseover-id1"
+      onmouseover="onmouseoverFunction()"
+      onmouseout="onmouseoutFunction()"
+    >
+      This is Mouse Over event and mouse out
+    </p>
+    <hr />
+    <p id="onmousemove-id" onmousemove="onmousemove()">
+      This happens because of onmousemove
+    </p>
+    <hr />
+    <p id="demo" onmousewheel="myFunction()">on mouse wheel</p>
+
+    <hr />
+    <p id="enter-leave" onmouseenter="enter()" onmouseleave="leave()">
+      this is mouse enter and leave
+    </p>
+
+    <hr />
+    <a href="https://www.google.com" target="_parent"> hi there</a>
+    <a href="www.google.com" target="blank"> hi there</a>
+    <a href="www.google.com" target="blank"> hi there</a>
+  </body>
+</html> 

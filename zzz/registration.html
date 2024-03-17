@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="" onsubmit="return formValidation()" autocomplete="off">
+            <fieldset >
+                <legend><label>Registration Form</label></legend>
+               <div class="input-name">
+                <label for="full-name">Enter Your Full name</label>
+                <input type="text" id="full-name" required placeholder="Enter Your full name">
+<br>
+               </div>
+               <div class="input-email">
+                <label for="email">Enter Your Email Id</label>
+                <input type="email" id="email" required placeholder="Enter Your Email" autocomplete="off" >
+
+               </div>
+               <div class="input-password">
+                <label for="password">Enter your Password</label>
+                <input type="password" id="password">
+               </div>
+               <div class="confirm-password">
+                <label for="confirm-password">Confirm your Password</label>
+                <input type="password" id="confirm-password">
+               </div>
+
+               <div class="input-number">
+                <label for="number">Enter your Number</label>
+                <input type="number" id="number">
+               </div>
+
+               <div class="input-dob">
+                <label for="dob"> Date of Birth</label>
+                <input type="date" id="dob">
+               </div>
+
+          
+               <div class="input-submit">
+                <input type="submit" name="" id="">
+               </div>
+            </fieldset>
+        </form> 
+    </div>
+    <script src="registration.js"></script>
+</body>
+</html>

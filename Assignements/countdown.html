@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Countdown Timer</title>
+  </head>
+  <body>
+    <label for="countdown-time">Minute</label>
+    <input
+      type="number"
+      placeholder="Enter Minutes"
+      required
+      id="countdown-time"
+    />
+    <br />
+    <br />
+    <input type="button" value="Start Countdown" id="countdown-button" onclick="displayCountdownFunction()" />
+
+    <br /><br />
+    <div class="display-time"></div>
+
+    <script src="countdown.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop Up</title>
+    <link rel="stylesheet" href="pop_up.css" />
+  
+  </head>
+  <body>
+    <button class="btn">Log IN</button>
+    <div class="overlay"></div>
+    <div class="appointment-form">
+        <span onclick="hideFunction()">&times; </span>
+        <form action="" id="formId">
+            <div class="full-name">
+                <input type="text" name="" id="full-name" placeholder="Your Full Name*">
+            </div>
+            <div class="mobile-number">
+                <input type="number" name="" id="full-name" placeholder="Mobile Number*">
+            </div>
+            <div class="treatment-dropdown">
+                
+                <select id="treatment" >
+                    <option value="0">Select Treatment</option>
+                    <option value="ajay">ajay</option>
+                    <option value="vijay">vijay</option>
+                    <option value="niraj">niraj</option>
+                    <option value="viraj" >viraj</option>
+                </select>
+            </div>
+            <div class="select-branch">
+              
+                <select name="" id="branch">
+                    <option value="0" >Select Branch</option>
+                    <option value="pune">Pune</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                    <option value="Bombay">Bombay</option>
+                    <option value="OOTY"    >OOTY</option>
+                </select>
+            </div>
+            <div class="textarea">
+                <textarea rows="4">Please tell us your  concers</textarea>
+            </div>
+            <div>
+                <button type="button">Get an Appoinment</button>
+            </div>
+        </form>
+    </div>
+    <script src="pop_up.js"></script>
+  </body>
+</html>

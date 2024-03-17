@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Quotes</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>Random Quotes</h1>
+
+<div id="quoteContainer">
+    <p>Click the button below to fetch a random quote!</p>
+</div>
+
+<button id="fetchQuote">Fetch Quote</button>
+
+<script>
+$(document).ready(function() {
+    // Function to fetch random quote
+    function fetchRandomQuote() {
+        // API endpoint for random quote
+        const apiUrl = 'https://quotes.rest/qod?category=inspire';
+
+        // AJAX request to fetch random quote
+        $.ajax({
+            url: apiUrl,
+            method: 'GET',
+            success: function(response) {
+                // Display fetched quote
+                const quoteText = response.contents.quotes[0].quote;
+                $('#quoteContainer').html(`<p>${quoteText}</p>`);
+            },
+            error: function(xhr, status, error) {
+                // Display error message if request fails
+                $('#quoteContainer').html(`<p>Error fetching quote: ${error}</p>`);
+            }
+        });
+    }
+
+    // Fetch random quote when button is clicked
+    $('#fetchQuote').click(function() {
+        fetchRandomQuote();
+    });
+
+    // Fetch random quote when page loads
+    fetchRandomQuote();
+});
+</script>
+
+</body>
+</html>

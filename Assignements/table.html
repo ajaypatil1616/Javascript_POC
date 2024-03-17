@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table exmaples</title>
+    <style>
+      .table-container {
+        overflow-x: auto;
+        overflow-y: auto;
+      }
+      table {
+        border: 1px black solid;
+        border-collapse: collapse;
+        width: 800px;
+        text-align: justify;
+      }
+      td {
+        border: 1px solid black;
+        padding: 5px;
+        /* text-align: center; */
+      }
+      tr {
+        height: 40px;
+      }
+      /* tr:nth-child(odd){
+        background-color: aqua;
+      } */ 
+      /* tr:hover{  
+        background-color: #D6EE;
+      } */
+      .bg {
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr class="bg">
+            <td colspan="3">Invoice #123456789</td>
+            <td>14 January 2025</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <strong>Pay to:</strong><br />
+              Acme Billing Co. <br />
+              123 Main St. <br />
+              Cityville, NA 12345 <br />
+            </td>
+            <td colspan="2">
+              <strong>Customer</strong> <br />
+              John Smith <br />
+              321 Willow Way <br />
+              Southeast Northwestershire, MA 54321 <br />
+            </td>
+          </tr>
+
+          <tr class="bg">
+            <td>Name / Description</td>
+            <td>Qty.</td>
+            <td>@</td>
+            <td>Cost</td>
+          </tr>
+          <tr>
+            <td>Paperclips</td>
+            <td>1000.</td>
+            <td>0.01</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td>Staples (box)</td>
+            <td>100.</td>
+            <td>1.00</td>
+            <td>100.00</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="bg">Subtotal</td>
+            <td>110.0</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="bg">Tax</td>
+            <td>8%</td>
+            <td>8.80</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="bg">Grand Total</td>
+            <td>$118.80</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br /><br />
+    <hr />
+    <div class="second-table">
+      <table>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Table neam</td>
+            <td>QUERY</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="4">Build 1</td>
+            <td rowspan="2">table no1</td>
+            <td>q1</td>
+          </tr>
+         
+          <tr>
+            <td>q2</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">tbale 2</td>
+            <td>Q3</td>
+          </tr>
+          <tr>
+            <td>Q4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

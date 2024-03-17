@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Worker</title>
+  </head>
+  <body>
+    <h1>Web Worker</h1>
+    <p>web worker does not have access to parent,window and document</p>
+    <p>create web worker object : let obj = new Worker("jsfileName.js")</p>
+    <p>Works in diffrenet global context and used for complex operations and runs in background</p>
+    <p> postMessage(), onMessage() </p>
+    <h2 id="hi"></h2>
+    <h2 id="output"></h2>
+    <button id="btn1">Load Large Data</button>
+    <button id="btn2">Print Hi</button>
+    <script src="script.js"></script>
+  </body>
+</html>

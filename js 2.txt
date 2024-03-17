@@ -1,0 +1,115 @@
+//Everything is an object in JavaScript.
+//Object Creation
+/*
+By object literal
+By creating instance of Object directly (using new keyword)
+By using an object constructor (using new keyword)
+*/
+//1.
+/*
+emp = {id:101,name:"Ajay",dept: "CSE",salary:20000}
+document.write(typeof(emp))
+*/
+//2.
+/*
+var obj = new Object()
+obj.id = 102
+obj.name = "Vivek Patil"
+obj.dept = "CSE"
+obj.salary = 20000
+document.write(obj.id, " " , obj.name, " " , obj.salary)
+*/
+
+//3.
+/*
+function ajay(id,name,salary){
+    this.id = id
+    this.name = name
+    this.salary = salary
+}
+
+e =new ajay(103,"Vishal Pawar", 20000)
+document.write(e.id,e.name,e.salary)
+
+*/
+
+//JS Array
+
+
+
+//JS Array
+
+var my_array = ["aj","ay",5]
+document.write(my_array)
+
+var arr = new Array();
+console.log(arr)
+arr[0] = "vivek"
+arr[1] = "Rosh"
+arr[2] = "Chota Packet"
+console.log(arr)
+
+
+//Strings
+var str = "MyNameIsKhan"
+var str1 = "Hi There"
+
+var str2 = str.concat(str1)
+document.write(str2)
+
+document.write(str.charAt(4))
+
+document.write(str.indexOf("a"))
+
+document.write(str.lastIndexOf("a"))
+
+document.write(str.toLowerCase())
+
+document.write(str.toUpperCase())
+
+document.write(str.slice(2,6))
+
+var str3 = "       afdsfsd        sdfsdf"
+document.write(str3.trim()) //Trims out the white spaces
+
+var str4="This is JavaTpoint website";  
+document.write(str.split(" ")); 
+document.write(typeof(str4))
+
+// Date In Date
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

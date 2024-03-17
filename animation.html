@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation example</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            animation-name: first-animation;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count:  infinite;
+            animation-direction: normal;
+            animation-timing-function: ease-out;
+            animation-fill-mode:forwards    ;
+        }
+        @keyframes first-animation{
+            0% {background-color: red; left: 0; top: 0px;}
+            25%{background-color: orange;left: 50px; top: 0px;}
+            50%{background-color: yellow;top: 50px; left: 100px;}
+            42%{background-color: green; left: 150px; top: 100px;}
+            56%{background-color: blue;top: 150px;left: 150px;}
+            70%{background-color: aqua; top: 100px;left: 100px;}
+            84%{background-color: black; top: 50px; left: 50px;}
+            100%{background-color: maroon; top: 0px; left: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <p draggable="false">After the animation is over it will be at its origin state</p>
+    <p>You must have to mention the duration for the animaton otherwise animation will not working</p>
+    
+</body>
+</html>
